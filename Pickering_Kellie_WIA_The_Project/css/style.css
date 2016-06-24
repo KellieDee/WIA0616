@@ -1,0 +1,273 @@
+/*
+    Kellie Pickering
+    Web Interaction & Animation
+    06/02/16
+*/
+
+
+/***** PAGE *********************************************************/
+
+body {
+    background: 
+        linear-gradient(rgba(91,126,162, .9), rgba(91,126,162, 0)), 
+        url('../resources/swirl.png') fixed;
+    font: .9em 'Helvetica', sans-serif;
+    margin: 0;
+}
+
+section {
+    background-color: #FFF;
+    border-left: 3px solid #FFF;
+    border-right: 4px solid #FFF;
+    margin: 0 20%;
+    width: 59%;
+}
+
+h2 {
+    color: rgb(91,126,162);
+    font: 2em 'Give You Glory', cursive;
+    padding: .5em;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 1em 0 .8em .5em;
+}
+
+h2::after {
+    border: 1px solid #EEE;
+    content: "";
+    display: block;
+    margin-top: -.5em;
+    width: 98%;
+}
+
+h3 {
+    color: #444;
+    letter-spacing: .2em;
+    margin: 0 0 .5em 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/***** HEADER *******************************************************/
+
+header img {
+    position: absolute;
+    margin: 0 2em 0 0;
+    opacity: .8;
+    right: 20%;
+    top: 24em;
+    width: 10%;
+    z-index: 1;
+}
+
+video {
+    border-left: 3px solid #FFF;
+    border-right: 4px solid #FFF;
+    margin: 0 20%;
+    position: relative;
+    width: 59%;
+}
+
+/***** NAVIGATION ***************************************************/
+
+nav {
+    background-color: #444;
+    margin: 0 20%;
+    width: 59.5%;
+    z-index: 3;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: -4px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: .5em;
+}
+
+nav ul li:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #FFF;
+    font: 1.5em 'Give You Glory', cursive;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover,
+.activeLink {
+    color: #EE5A44;
+}
+
+/***** ABOUT ********************************************************/
+
+#about:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#about a {
+    color: #5C82A2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#about div {
+    display: inline-block;
+}
+
+#about > div:first-of-type {
+    color: #AAA;
+    border-left: 3px solid #9FCBEE;
+    font-style: italic;
+    margin: 0 0 2em 1em;
+    padding: 0 0 0 1em;
+}
+
+#about > div:last-of-type {
+    padding: 0 0 0 1em;
+    width: 22em;
+}
+
+#about h3 {
+    text-align: left;
+}
+
+#about h3:after {
+    border: 1px solid #EEE;
+    content: "";
+    display: block;
+    margin: .4em 0 0 0;
+    width: 95%;
+}
+
+#about h3:not(:first-of-type) {
+    margin-top: 1.5em;
+}
+
+#about ul {
+    padding: 0 0 0 1em;
+}
+
+#barGraph {
+    float: right;
+    width: 500px;
+}
+
+
+/***** SERVICES *****************************************************/
+
+#services div {
+    border: 1px solid #CCC;
+    border-radius: .2em;
+    display: inline-block;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+#services div:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+canvas {
+    height: 150px;
+    width: 216px;
+}
+
+#services p {
+    width: 15em;
+    text-align: center;
+}
+
+#services a {
+    color: #FFF;
+    background-color: #5C82A2;
+    border-radius: .2em;
+    display: block;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: ease all .5s;
+    width: 93%;
+}
+
+#services a:hover {
+    background-color: #EE5A44;
+    transition: ease all .5s;
+}
+
+/***** ADOPT ********************************************************/
+
+#adopt {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#adopt div {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+}
+
+#adopt div:first-of-type {
+    margin-left: 1em;
+}
+
+#adopt h3 {
+    margin-bottom: 1em;
+}
+
+#adopt p {
+    border-top: 5px solid #DDD;
+    color: #5C82A2;
+    font-weight: bold;
+    text-align: center;
+    margin: .5em 0;
+    padding: .5em 0;
+}
+
+#adopt > a:last-of-type {
+    background-color: #5C82A2;
+    border-radius: .2em;
+    clear: both;
+    color: #FFF;
+    float: right;
+    display: block;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: ease all .5s;
+    margin: 0 1em 21em 0;
+    width: 20em;
+
+}
+
+#adopt > a:last-of-type:hover {
+    background-color: #EE5A44;
+    transition: ease all .5s;
+}
+
+/***** FOOTER *******************************************************/
+
+footer {
+    background-color: #444;
+    color: #FFF;
+    font-size: .8em;
+    margin: 0 20%;
+    padding: 1em 0;
+    text-align: center;
+    width: 59.5%;
+}
+
+footer p {
+    margin: 0;
+}

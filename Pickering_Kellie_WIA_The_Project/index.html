@@ -1,0 +1,141 @@
+<!--    
+    Kellie Pickering
+    Web Interaction & Animation
+    06/02/16
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Last Chance Animal Shelter</title>
+    <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/plugins/modernizr.js"></script>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="top">
+        <img src="resources/logo.png" alt="Last Chance Animal Shelter Logo">
+        <!-- HTML5 Video -->
+        <video width="59%" muted autoplay loop>
+            <source src="resources/sad-puppy.mp4" type="video/MP4" />
+            <source src="resources/sad-puppy.ogv" type="video/ogg" />
+            Video is not supported by your browser.
+        </video>
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#top">home</a></li>
+                <li><a href="#about" id="aboutLink">about</a></li>
+                <li><a href="#services" id="servicesLink">services</a></li>
+                <li><a href="#adopt" id="adoptionLink">adoption</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- About -->
+    <section id="about">
+        <h2>about</h2>
+        <div>
+            <!-- Animal Fact -->
+            <p>Every year about eight million animals will find their way to a shelter; almost three million of them will be euthanized. <a href="http://www.aspca.org/animal-homelessness/shelter-intake-and-surrender/pet-statistics" target="_blank">source</a></p>
+        </div>
+        <div id="barGraph">
+            <!-- Animated Graph -->
+        </div>
+        <div>
+            <!-- Company Mission -->
+            <h3>Mission</h3>
+            <p>We believe every animal deserves a safe home and loving family. Our mission is to shelter the lost and abandoned and transfer animals from high-risk kill shelters across the nation to our no-kill facility. </p>
+            <h3>Vision</h3>
+            <p>We want to expand to multiple cities across the United States and reduce the percentage of euthanized shelter animals to a low, reasonable amount. </p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Find homes for 10,000 animals in 2016.</li>
+                <li>Expand to five nearby states by fall 2018</li>
+                <li>Reduce euthanization by 15% by 2020.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="services">
+        <h2>Services</h2>
+        <div>
+            <!-- Boarding -->
+            <h3>Boarding</h3>
+            <canvas id="boarding">
+                <img src="resources/boarding.png" alt="Boarding Fallback Image" />
+            </canvas>
+            <p>24/7 staffed boarding available year-round, including holidays </p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+            <!-- Grooming -->
+            <h3>Grooming</h3>
+            <canvas id="grooming">
+                <img src="resources/grooming.png" alt="Grooming Fallback Image" />
+            </canvas>
+            <p>grooming services provided on-site by licensed professionals </p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+            <!-- Obedience Training -->
+            <h3>Obedience</h3>
+            <canvas id="obedience">
+                <img src="resources/obedience.png" alt="Obedience Fallback Image" />
+            </canvas>
+            <p>obedience classes for dogs offered by our partners </p>
+            <a href="#">learn more</a>
+        </div>
+    </section>
+    
+    <!-- Adoption -->
+    <section id="adopt">
+        <h2>adopt</h2>
+        <!--Featured Pets -->
+        <h3>June featured pets</h3>
+        <div>
+            <a href="resources/cat1.jpg" title="Boots" data-lightbox="featured">
+                <img src="resources/cat1.jpg" alt="Adoptable Cat - Boots" width="190" height="180">
+            </a>
+            <p>Boots</p>
+        </div>
+        <div>
+            <a href="resources/dog.jpg" title="Dax" data-lightbox="featured">
+                <img src="resources/dog.jpg" alt="Adoptable Dog - Dax" width="190" height="180">
+            </a>
+            <p>Dax</p>
+        </div>
+        <div>
+            <a href="resources/cat2.jpg" title="Mittens" data-lightbox="featured">
+                <img src="resources/cat2.jpg" alt="Adoptable Cat - Mittens" width="190" height="180">
+            </a>
+            <p>Mittens</p>
+        </div>
+        <div>
+            <a href="resources/rabbit.jpg" title="Fluffers" data-lightbox="featured">
+                <img src="resources/rabbit.jpg" alt="Adoptable Rabbit - Fluffers" width="190" height="180">
+            </a>
+            <p>Fluffers</p>
+        </div>
+        <a href="#">Browse All Pets</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Website created by Kellie Pickering 2016 for educational purposes only.</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/plugins/lightbox.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
